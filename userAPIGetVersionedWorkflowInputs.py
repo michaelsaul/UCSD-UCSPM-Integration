@@ -33,4 +33,4 @@ response = urllib2.urlopen(req)
 json_object = json.load(response)
 
 for results in json_object["serviceResult"]["0"]:
-  print results["name"]
+    print results["name"]

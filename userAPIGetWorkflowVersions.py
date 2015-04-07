@@ -26,11 +26,13 @@ data = urllib.urlencode(values)
 headers = {authHeader : authKey,
            }
 
+print(data)
+
 req = urllib2.Request(url, data, headers)
 response = urllib2.urlopen(req)
 
 json_object = json.load(response)
 
 for results in json_object["serviceResult"]:
-  print results["version"]
+    print results["version"]
 
