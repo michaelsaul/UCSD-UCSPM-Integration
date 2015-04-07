@@ -10,11 +10,10 @@ config = ConfigParser.RawConfigParser()
 config.read("site.cfg")
 authKey = config.get("UCSD", "authKey")
 ip = config.get("UCSD", "ip")
+workflowName = config.get("Workflow", "workflowName")
 
 #Set Authentication Header
 authHeader = "X-Cloupia-Request-Key"
-
-workflowName = "Randy Create Data Store Fiber Channel"
 
 #Construct the URL
 url = "http://" + ip + "/app/api/rest?"
