@@ -32,5 +32,7 @@ response = urllib2.urlopen(req)
 
 json_object = json.load(response)
 
-for results in json_object["serviceResult"]["0"]:
-    print results["name"]
+
+#This is still broken. Needs to iterate through the response and document all the input fields.
+#for results in json_object["serviceResult"]["0"]:
+#    print results["name"]
