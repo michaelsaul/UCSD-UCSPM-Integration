@@ -46,15 +46,8 @@ headers = {authHeader : authKey}
 #print(data)
 
 req = urllib2.Request(url, data, headers)
+response = urllib2.urlopen(req)
 
-try:
-    response = urllib2.urlopen(req)
-except urllib2.HTTPError as e:
-    print e.code
-    print e.read()
-
-print response.read()
-
-json_object = json.loads(response.read())
+json_object = json.load(response)
 serviceRequest = json_object['serviceResult']
 print(serviceRequest)
