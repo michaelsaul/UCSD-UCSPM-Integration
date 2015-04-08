@@ -11,7 +11,6 @@ parser = argparse.ArgumentParser(description='Roll back a Service Request')
 parser.add_argument('SR', metavar="SR", type=int, nargs=1, help="A service request ID.")
 
 args = parser.parse_args()
-
 serviceRequestID = args.SR
 
 #Get configuration from file site.cfg
