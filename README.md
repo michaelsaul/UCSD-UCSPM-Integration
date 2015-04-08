@@ -30,6 +30,7 @@ Running the scripts requires a configuration file in the following format. Be su
     - Check for any errors returned from the API and display/log if not availeble
 - Clean up code to resue funtions
 - Create and add command line options for workflow names, inputs for workflows
+- Progammatically query the required inputs for a workflow, and dynamically generate cfg file and method for submitting job
 
 ##More Information
 [Cisco UCS Performance Manager](http://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-performance-manager/index.html)
