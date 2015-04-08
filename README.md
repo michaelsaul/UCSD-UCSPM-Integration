@@ -26,7 +26,14 @@ Running the scripts requires a configuration file in the following format. Be su
 	srDurationHours = 1
 	groupID = 0
 
-#More Information
+##ToDo
+- Add error handling
+    - HTTP Status codes
+    - Check for any errors returned from the API and display/log if not availeble
+- Clean up code to resue funtions
+- Create and add command line options for workflow names, inputs for workflows
+
+##More Information
 [Cisco UCS Performance Manager](http://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-performance-manager/index.html)
 
 [Cisco UCS Director](http://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-director/index.html)
