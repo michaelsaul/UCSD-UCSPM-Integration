@@ -12,10 +12,10 @@ authKey = config.get("UCSD", "authKey")
 ip = config.get("UCSD", "ip")
 workflowName = config.get("Workflow", "workflowName")
 workflowVersion = config.get("Workflow", "workflowVersion")
-dataStoreName = config.get("Workflow", "dataStoreName")
-dataStoreSize = config.get("Workflow", "dataStoreSize")
-volumeSize = config.get("Workflow", "volumeSize")
 parentSRID = config.get("Workflow", "parentSRID")
+dataStoreName = config.get(workflowName, "dataStoreName")
+dataStoreSize = config.get(workflowName, "dataStoreSize")
+volumeSize = config.get(workflowName, "volumeSize")
 
 #Set Authentication Header
 authHeader = "X-Cloupia-Request-Key"

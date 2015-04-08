@@ -16,15 +16,13 @@ Running the scripts requires a configuration file in the following format. Be su
 	ip = a.b.c.d
 	authKey = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	[Workflow]
-	workflowName = A Workflow Name
+	workflowName = $Workflow
 	workflowVersion = 0
-	dataStoreName = A Datastore Name
+	parentSRID = -1
+	[$Workflow]
+	dataStoreName = $DatastoreName
 	dataStoreSize = 5
 	volumeSize = 10
-	parentSRID = -1
-	srStartTime = 0
-	srDurationHours = 1
-	groupID = 0
 
 ##ToDo
 - Add error handling
