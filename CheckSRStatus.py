@@ -39,8 +39,8 @@ json_object = json.load(response)
 status = json_object["serviceResult"]
 
 if status == 1:
-    print "Workflow SR " + str(serviceRequestID) + " is in progress."
+    print "Workflow SR " + str(serviceRequestID).strip("[]") + " is in progress."
 elif status == 3:
-    print "Workflow SR " + str(serviceRequestID) + " is complete."
+    print "Workflow SR " + str(serviceRequestID).strip("[]") + " is complete."
 elif status == 2:
-    print "Workflow SR " + str(serviceRequestID) + " failed."
+    print "Workflow SR " + str(serviceRequestID).strip("[]") + " failed."
